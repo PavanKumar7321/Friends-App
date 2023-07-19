@@ -1,0 +1,24 @@
+
+<div class="jumbotron">
+  <h1 class="display-4" style="font-family: 'Times New Roman', serif;">
+    <%= @friend.first_name %> <%= @friend.last_name %>
+  </h1>
+  <p class="lead" style="font-family: Arial, sans-serif;">
+    <%= @friend.email %> |
+    <%= @friend.phone %>
+  </p>
+  <hr class="my-4">
+  <p style="font-family: 'Courier New', monospace;">
+    <%= @friend.facebook %>
+  </p>
+  <p class="lead">
+    <%= link_to "Edit", edit_friend_path(@friend), class: "btn btn-primary", style: "font-family: Arial, sans-serif;" %>
+    <%= link_to "Back", friends_path, class: "btn btn-dark", style: "font-family: Arial, sans-serif;" %>
+  </p>
+
+ 
+</div>
+
+ <p>
+  <%= button_to "Destroy this friend", @friend, method: :delete, class:"btn btn-danger" %>
+  </p>
