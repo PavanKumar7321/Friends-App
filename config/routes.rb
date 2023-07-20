@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   resources :new_projects
   resources :project22s
   # get 'home/index'
-  root 'home#index'
+  # root 'home#index'
+  root 'friends#index'
+
   get 'home/about'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

@@ -13,12 +13,17 @@
   </p>
   <p class="lead">
     <%= link_to "Edit", edit_friend_path(@friend), class: "btn btn-primary", style: "font-family: Arial, sans-serif;" %>
+ 
+    
+    
     <%= link_to "Back", friends_path, class: "btn btn-dark", style: "font-family: Arial, sans-serif;" %>
+
   </p>
+     <%= button_to "Delete", @friend, method: :delete, class:"btn btn-danger" %>
 
  
 </div>
 
- <p>
+ <%# <p>
   <%= button_to "Destroy this friend", @friend, method: :delete, class:"btn btn-danger" %>
-  </p>
+  <%# </p>  %>
